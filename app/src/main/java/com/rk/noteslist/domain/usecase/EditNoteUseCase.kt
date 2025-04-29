@@ -6,6 +6,6 @@ import com.rk.noteslist.domain.entity.Note
 class EditNoteUseCase(private val repository: NotesListRepository) {
 
     fun execute(note: Note) {
-        repository.changeNoteInfo(note)
+        repository.editNote(note)
     }
 }

@@ -1,10 +1,10 @@
 package com.rk.noteslist.domain.entity
 
 data class Note(
-    val id: Int = UNDEFINED_ID,
+    var id: Int = UNDEFINED_ID,
     val title: String,
     val textContent: String,
-    val status: Boolean,
+    var status: Boolean,
     val remindDate: Long?,      //для хранения даты напоминания, удобно работать с БД
 ) {
 
