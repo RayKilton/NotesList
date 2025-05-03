@@ -35,8 +35,7 @@ class MainViewModel : ViewModel() {
         editNoteUseCase.execute(newNote)
     }
 
-    fun editNoteInfo() {
-
+    fun editNoteInfo(note: Note) {
     }
 
     fun getNoteById(noteId: Int): Note{
